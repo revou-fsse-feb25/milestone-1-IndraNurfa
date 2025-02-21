@@ -1,6 +1,6 @@
 # Welcome to Milestone 1
 
-<img align="right" width="130px" src="assets/logo/revou.png">
+<img align="right" width="130px" src="assets/images/logo/revou.png">
 
 **Ahmad Indra Nurfauzi - Team 2**
 
