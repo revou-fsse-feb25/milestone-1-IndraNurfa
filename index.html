@@ -1,13 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font -->
+    <link rel="stylesheet" href="styles/font.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/65199da800.js" crossorigin="anonymous"></script>
+
+    <!-- Metatags -->
     <title>Milestone 1 - Ahmad Indra Nurfauzi</title>
     <meta name="title" content="Milestone 1 - Ahmad Indra Nurfauzi" />
     <meta name="description"
         content="Full-Stack Engineer with expertise in Java, JavaScript, TypeScript, and Golang. Passionate about building scalable web applications and optimizing system performance." />
+
+    <meta name="keywords"
+        content="ahmad indra nurfauzi, indra nurfa, full-stack developer, frontend engineer, backend engineer, technical support engineer, database, moladin, telkom university, revou, goto impact">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -16,7 +37,7 @@
     <meta property="og:description"
         content="Full-Stack Engineer with expertise in Java, JavaScript, TypeScript, and Golang. Passionate about building scalable web applications and optimizing system performance." />
     <meta property="og:image"
-        content="https://revou-fsse-feb25.github.io/milestone-1-IndraNurfa/assets/images/logo/revou.png" />
+        content="https://revou-fsse-feb25.github.io/milestone-1-IndraNurfa/ assets/logo/revou.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -25,175 +46,221 @@
     <meta property="twitter:description"
         content="Full-Stack Engineer with expertise in Java, JavaScript, TypeScript, and Golang. Passionate about building scalable web applications and optimizing system performance." />
     <meta property="twitter:image"
-        content="https://revou-fsse-feb25.github.io/milestone-1-IndraNurfa/assets/images/logo/revou.png" />
+        content="https://revou-fsse-feb25.github.io/milestone-1-IndraNurfa/ assets/logo/revou.png" />
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/favicon/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href=" assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href=" assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href=" assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href=" assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href=" assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href=" assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href=" assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href=" assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href=" assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href=" assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href=" assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href=" assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href=" assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href=" assets/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content=" assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body class="bg-[#E5E1DA]">
     <header>
         <nav>
-            <ul>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#my-project">Project</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
+            <ul
+                class="bg-[#89A8B2] w-full border-b border-b-black p-[2px] md:p-[8px] lg:p-[12px] poppins-bold flex items-center justify-evenly text-base md:text-lg lg:text-xl text-white">
+                <li
+                    class="relative my-4 after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-full after:transition-all after:duration-300">
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li
+                    class="relative my-4 after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-full after:transition-all after:duration-300">
+                    <a href="#my-project">Project</a>
+                </li>
+                <li
+                    class="relative my-4 after:bg-white after:absolute after:h-1 after:w-0 after:bottom-0 after:left-1/2 after:-translate-x-1/2 hover:after:w-full after:transition-all after:duration-300">
+                    <a href="#contact-me">Contact Me</a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="home" id="home">
-            <h1>Ahmad Indra Nurfauzi</h1>
-            <caption>Full-Stack Engineer | Problem Solver | System Optimizer</caption>
-            <!-- <img src="" alt="" srcset=""> -->
+    <main class="container mx-auto mt-[20px]">
+        <section id="home" class="flex flex-col md:flex-row items-center p-4 gap-8 mx-[40px] lg:mx-[100px]">
+            <div class="flex-1">
+                <h1
+                    class="poppins-bold text-xl md:text-2xl lg:text-4xl text-gray-800 text-center md:text-left antialiased">
+                    AHMAD
+                    INDRA NURFAUZI</h1>
+                <p
+                    class="poppins-semibold text-base md:text-lg lg:text-xl text-gray-600 mt-2 text-center md:text-left antialiased">
+                    Full-Stack Engineer | Problem Solver | System Optimizer
+                </p>
+            </div>
+            <div
+                class="overflow-hidden block rounded-[20px] border-[2px] ease-in hover:shadow-2xl hover:border-[#FF8A8A] ">
+                <img src=" assets/profile-picture/Screenshot.png" alt="profile picture"
+                    class="w-48 md:w-64 transition ease-in duration-300 hover:scale-110 hover:shadow-lg dark:hover:shadow-black/30">
+            </div>
         </section>
 
-        <section class="about-me" id="about-me">
-            <h1>ABOUT ME</h1>
-            <p>I am a Full-Stack Engineer with expertise in application development, programming, and technical support.
-                Experienced in building and optimizing systems using Java, JavaScript, TypeScript, Golang, and databases
-                like MySQL, PostgreSQL, and MongoDB.
-                With a strong foundation in both backend and frontend development, I focus on creating efficient,
-                scalable, and user-friendly technology solutions. I also have skills in troubleshooting and system
-                optimization, ensuring smooth performance and high-quality applications.</p>
-            <a href="https://www.linkedin.com/in/ahmad-indra-nurfauzi/" target="_blank" rel="noopener noreferrer"><img
-                    src="assets/images/logo/linkedIn.png" alt="linkedin ahmad indra nurfauzi"></a>
-            <a href="https://github.com/IndraNurfa" target="_blank" rel="noopener noreferrer"><img
-                    src="assets/images/logo/github.png" alt="github ahmad indra nurfauzi"></a>
+        <section id="about-me" class="p-2">
+            <h1 class="invisible">ABOUT ME</h1>
+            <div class="w-auto mx-auto">
+                <p class="poppins-medium text-center md:text-left tracking-wide leading-relaxed">
+                    I am a Full-Stack Engineer with expertise in application development, programming, and technical
+                    support.
+                    Experienced in Java, JavaScript, TypeScript, Golang, and databases like MySQL, PostgreSQL, and
+                    MongoDB.
+                    I focus on creating efficient, scalable, and user-friendly technology solutions while optimizing
+                    system
+                    performance.
+                </p>
 
-            <h2>EXPERIENCE</h2>
+                <div class="flex flex-col md:flex-row gap-4 mt-4 items-center md:justify-center lg:justify-start">
+                    <a href="https://www.linkedin.com/in/ahmad-indra-nurfauzi/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src=" assets/logo/linkedIn.png" alt="LinkedIn"
+                            class="py-auto h-auto w-[100px] md:w-[150px] lg:w-[200px] hover:scale-110 transition-transform duration-300">
+                    </a>
+                    <a href="https://github.com/IndraNurfa" target="_blank" rel="noopener noreferrer">
+                        <img src=" assets/logo/github.png" alt="GitHub"
+                            class="py-auto h-auto w-[100px] md:w-[150px] lg:w-[200px] hover:scale-110 transition-transform duration-300">
+                    </a>
+                </div>
 
-            <h3>Technical Support Engineer - Moladin</h3>
-            <p>Since <time datetime="2024-05">May 2024</time> - <time>Present</time></p>
-            <ul>
-                <li>Troubleshoot and diagnose technical issues faced by agents and dealers.</li>
-                <li>Help resolve technical issues, provide solutions, and ensure systems work properly.</li>
-                <li>Provide timely and effective resolutions to tech-related problems.</li>
-            </ul>
-
-            <h3>FullStack Engineer - GoTo Impact</h3>
-            <p>Since <time datetime="2023-05">June 2023</time> - <time datetime="2023-12">Dec 2023</time></p>
-            <ul>
-                <li>Built dynamic web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js),
-                    focusing on high performance and scalability.
-                <li>Developed a real-time disaster information application with robust back-end integration, meeting
-                    case-specific requirements with high-quality code and system efficiency.</li>
-                <li>Documented development workflows and technical specifications to ensure consistency and clarity
-                    across projects.</li>
-            </ul>
+            </div>
         </section>
+        <hr class="h-px my-[20px] bg-gray-200 border-2 dark:bg-gray-700">
 
-        <section class="my-project" id="my-project">
-            <h1>PROJECT</h1>
-            <ul>
-                <li>
-                    <article>
-                        <h2>
-                            <a href="https://infobencana.netlify.app/">InfoBencana</a>
-                        </h2>
-                        <img src="assets/images/project/infobencana.png" alt="infobencana">
-                        <p>InfoBencana is a platform aimed at providing accurate, timely, and integrated natural
+        <section id="experience" class="p-6">
+            <h2 class="text-2xl poppins-bold text-gray-800 mb-4 ml-4">Experience</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl poppins-semibold">Technical Support Engineer - Moladin</h3>
+                    <p class="poppins-regular text-gray-500 mt-1">May 2024 - Present</p>
+                    <ul class="list-disc list-inside mt-2 pl-2 text-gray-700 poppins-medium text-justify">
+                        <li>Troubleshoot and diagnose technical issues faced by agents and dealers.</li>
+                        <li>Provide technical solutions ensuring smooth system operations.</li>
+                        <li>Deliver timely and effective resolutions to tech-related problems.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xl poppins-semibold">FullStack Engineer - GoTo Impact</h3>
+                    <p class="poppins-regular text-gray-500 mt-1">June 2023 - Dec 2023</p>
+                    <ul class="list-disc list-inside mt-2 pl-2 text-gray-700 poppins-medium text-justify">
+                        <li>Developed high-performance web applications using MERN stack.</li>
+                        <li>Built a real-time disaster information app with backend integration.</li>
+                        <li>Maintained documentation to ensure workflow clarity.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <hr class="h-px my-[20px] bg-gray-200 border-2 dark:bg-gray-700">
+
+        <section id="my-project" class="p-6">
+            <h2 class="text-2xl poppins-bold text-gray-800 mb-6 text-left md:text-center">PROJECT</h2>
+
+            <div
+                class="flex flex-col md:flex-row items-center gap-8 bg-[#F1F0E8] shadow-lg rounded-lg overflow-hidden p-6">
+                <!-- Image when mobile -->
+                <div class="w-full md:w-1/2 md:hidden">
+                    <img src=" assets/project/infobencana.png" alt="InfoBencana"
+                        class="w-full h-auto object-cover rounded-lg border-[1px] border-gray-500 shadow-md ease-in duration-300 hover:shadow-lg">
+                </div>
+
+                <div class="w-full md:w-1/2 px-[30px]">
+                    <h3
+                        class="text-xl ml-[30px] poppins-semibold text-gray-800 hover:text-blue-500 flex items-center gap-2">
+                        <a href="https://infobencana.netlify.app/" target="_blank">InfoBencana</a>
+                        <img src=" assets/logo/mern.png" alt="mern-stack" class="w-[100px] h-[40px] ml-[20px]">
+                    </h3>
+
+                    <div class="text-ellipsis" id="description">
+                        <p class="text-gray-600 mt-2 px-2 text-sm poppins-regular leading-relaxed indent-4 break-words">
+                            InfoBencana is a platform aimed at providing accurate, timely, and integrated natural
                             disaster
                             information. This platform serves as a solution to the issues often faced by the Indonesian
                             public,
-                            such as the lack of access to accurate and timely information during disasters.
-                            Infobencana addresses this problem by efficiently integrating, processing, and disseminating
-                            relevant and credible natural disaster data. Our goal is to ensure that the public always
-                            receives
-                            the latest information they need at the right time.</p>
-                        <p><a href="https://github.com/infobencana">Github</a></p>
-                        <img src="assets/images/logo/mern.png" alt="mern-stack">
-                    </article>
-                </li>
-                <!-- <li>
-                    <article>
-                        <h2>
-                            Project 2
-                        </h2>
-                        <img src="" alt="">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius libero explicabo inventore
-                            quis
-                            impedit, corrupti perferendis, a, quae numquam minus soluta ipsam veritatis nemo nobis
-                            voluptates
-                            praesentium at eaque? Quibusdam!</p>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h2>
-                            Project 3
-                        </h2>
-                        <img src="" alt="">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius libero explicabo inventore
-                            quis
-                            impedit, corrupti perferendis, a, quae numquam minus soluta ipsam veritatis nemo nobis
-                            voluptates
-                            praesentium at eaque? Quibusdam!</p>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                    </article>
-                </li> -->
-            </ul>
+                            such as the lack of access to accurate and timely information during disasters. Infobencana
+                            addresses this problem by efficiently integrating, processing, and disseminating relevant
+                            and
+                            credible natural disaster data. Our goal is to ensure that the public always receives the
+                            latest
+                            information they need at the right time.
+                        </p>
+                    </div>
+                    <div class="mt-4 ml-[20px]">
+                        <a href="https://github.com/infobencana" target="_blank"
+                            class="text-gray-800 hover:text-blue-500 flex items-center gap-2 poppins-medium">
+                            <i class="fa-brands fa-square-github text-2xl"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Image when desktop -->
+                <div class="w-full md:w-1/2 max-md:hidden">
+                    <img src=" assets/project/infobencana.png" alt="InfoBencana"
+                        class="w-full h-auto object-cover rounded-lg border-[1px] border-gray-500 shadow-md ease-in duration-300 hover:shadow-lg">
+                </div>
+            </div>
         </section>
 
-        <section class="contact-me" id="contact-me">
-            <form action="mailto:ahmadindran@gmail.com" method="post" enctype="text/plain">
-                <fieldset>
-                    <legend>Contact Me</legend>
-                    <table>
-                        <tr>
-                            <td><label for="name">Name</label></td>
-                            <td><input type="text" name="name" id="name"></td>
-                        </tr>
-                        <tr>
-                            <td><label for="email">Email</label></td>
-                            <td><input type="email" name="email" id="email"></td>
-                        </tr>
-                        <tr>
-                            <td><label for="message">Message</label></td>
-                            <td><input type="text" name="message" id="message"></td>
-                        </tr>
-                        <tr>
-                            <td><button type="submit">Send Email</button></td>
-                        </tr>
-                    </table>
-                </fieldset>
-            </form>
+        <section id="contact" class="p-6 flex justify-center">
+            <div class="w-full max-w-lg bg-[#F1F0E8] shadow-lg rounded-lg border border-gray-300 p-6">
+                <h2 class="text-2xl poppins-bold text-gray-800 mb-4 text-center">Contact Me</h2>
+
+                <form action="mailto:ahmadindran@gmail.com" method="post" enctype="text/plain" class="space-y-4">
+                    <div>
+                        <label for="name" class="block text-gray-700 poppins-medium">Name</label>
+                        <input type="text" id="name" name="name"
+                            class="w-full px-4 py-2 text-sm poppins-regular border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div>
+                        <label for="email" class="block text-gray-700 poppins-medium">Email</label>
+                        <input type="email" id="email" name="email"
+                            class="w-full px-4 py-2 text-sm poppins-regular border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+
+                    <div>
+                        <label for="message" class="block text-gray-700 poppins-medium">Message</label>
+                        <textarea id="message" name="message" rows="4"
+                            class="w-full px-4 py-2 text-sm poppins-regular border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+
+                    <button type="submit"
+                        class="w-full bg-[#B3C8CF] text-white poppins-medium py-2 rounded-lg hover:bg-[#789DBC] transition duration-300">Send</button>
+                </form>
+            </div>
         </section>
 
     </main>
 
-    <footer>
-        <section>
-            <h2>Ahmad Indra Nurfauzi | Full-Stack Engineer</h2>
-            <p>&copy; All rights reserved.</p>
+    <footer class="bg-[#89A8B2] text-white py-6">
+        <section
+            class="container mx-auto px-6 grid gap-4 text-center md:text-left md:grid-cols-2 lg:grid-cols-3 items-center">
 
-            <nav>
-                <ul>
-                    <li><a href="https://github.com/IndraNurfa" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </li>
+            <div class="lg:justify-self-center lg:col-span-2">
+                <h2 class="text-lg poppins-semibold overflow-auto">Ahmad Indra Nurfauzi | Full-Stack Engineer</h2>
+                <p class="text-sm poppins-extralight mt-[5px]">&copy; <time datetime="2025">2025</time> All rights
+                    reserved.</p>
+            </div>
+
+            <nav class="md:justify-self-end">
+                <ul class="flex flex-col space-y-2 md:text-end lg:text-end">
+                    <li><a href="https://github.com/IndraNurfa" target="_blank" rel="noopener noreferrer"
+                            class="hover:text-gray-200"><i class="fa-brands fa-github"></i> GitHub</a></li>
                     <li><a href="https://www.linkedin.com/in/ahmad-indra-nurfauzi/" target="_blank"
-                            rel="noopener noreferrer">LinkedIn</a></li>
-                    <li><a href="mailto:ahmadindran@gmail.com">Email</a></li>
+                            rel="noopener noreferrer" class="hover:text-gray-200"><i class="fa-brands fa-linkedin"></i>
+                            LinkedIn</a></li>
+                    <li><a href="mailto:test@gmail.com" class="hover:text-gray-200"><i class="fa-solid fa-envelope"></i>
+                            Email</a></li>
                 </ul>
             </nav>
         </section>
